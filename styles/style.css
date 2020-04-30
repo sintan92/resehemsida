@@ -1,0 +1,121 @@
+body{
+	/*
+	background-image: url("../images/cave.jpg");
+	background-position: center;*/
+
+	
+}
+
+}
+
+/*menu bar*/
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f1f1f1;
+	text-align: right;
+
+	
+}
+li{
+	display: inline-block;
+
+
+}
+li a{
+	width: 300px;
+	margin-right: 10px;
+	position: sticky;
+}
+
+p{
+	float: left;
+	background-color: #eee
+
+}
+
+.accordion{
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 10%;
+	text-align: left;
+	float: right;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+.accordion:hover{
+	background-color: white;
+}
+
+.panel{
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+}
+
+/*text on pictuers with table*/
+.imageMenuWrapper{
+	position: relative;
+}
+
+
+.imageMenuText{
+	position: absolute;
+	top: 150px;
+	left: 120px;
+	
+}
+.imageMenuText: hover{
+background-color: red;
+}
+
+h1{
+	text-align: center;
+	color: yellow;
+}
+
+table{
+	margin-left: auto;
+	margin-right: 70px;
+}
+
+
+img{
+	border-radius: 2px;
+	width: 300px;
+	height: 300px;
+}
+
+//*news*/
+#info{
+	text-align: center;
+}
+
+	/*gallery with pictuers*/
+.scrolling-wrapper{
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.gallery{
+	display: inline-block;
+}
+.articleText{
+	font-family: Verdana;
+	width: 30%;
+	text-align: justify;
+	margin-left: 20px;
+}
+#contact {
+	margin-left: auto;
+}
