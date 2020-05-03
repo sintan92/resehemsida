@@ -4,6 +4,7 @@
 		<title>Uppgift1</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
 
 			<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -19,6 +20,10 @@
 
 <!--css style-->
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
+<!--Javascript style-->
+		<script src="/js/main.js"></script>
+<!--jquery style-->
+		<script src="jquery.js"></script>
 		
 	</head>
 
@@ -40,13 +45,36 @@
 
 		<button class="accordion">Nyheter</button>
 		<div class="panel">
-			<a href="https://www.aftonbladet.se/minekonomi/a/Adm35x/ja-till-handelsavtal-med-vietnam" target="_blank"></a>
+			<p>Javisst, säger EU-parlamentet till ett nytt handelsavtal med Vietnam. Grannen Kambodja riskerar samtidigt att bli av med delar av sin tullfrihet till EU. H&M kommer nu att utvärdera sina affärer i landet.</p>
 		</div>
 
 		<button class="accordion">Nyheter</button>
 		<div class="panel">
-			<a href=""https://www.aftonbladet.se/nyheter/a/dO8kEq/myndighet-i-nytt-asiatiskt-samarbete target="_blank"></a>
+			<p>Riksrevisionen har slutit ett nytt avtal om samarbete med motsvarande myndigheter i tio sydostasiatiska länder. Samarbetet sker via organisationen ASEANSAI som består av revisionsmyndigheterna i Brunei, Filippinerna, Indonesien, Kambodja, Laos, Malaysia, Myanmar, Singapore, Thailand och Vietnam.
+			</p>
 		</div>
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0;  i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		/*toggling between adding and removing the active class,
+		highlighting the button that controls the panel*/
+		this.classList.toggle("active");
+
+		/*toggle between hiding and showing the active panel*/
+		var panel = this.nextElementSibling;
+		if(panel.style.display === "block") {
+			panel.style.display = "none";
+		} else{
+			panel.style.display = "block";
+		}
+		
+	});
+}
+		</script>
 			
 		<br>
 		<section>

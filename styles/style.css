@@ -35,12 +35,13 @@ p{
 
 }
 
+/* styling button to open and close the accordion button*/
 .accordion{
 	background-color: #eee;
 	color: #444;
 	cursor: pointer;
 	padding: 18px;
-	width: 10%;
+	width: 50%;
 	text-align: left;
 	float: right;
 	border: none;
@@ -48,15 +49,18 @@ p{
 	transition: 0.4s;
 }
 
-.accordion:hover{
+.active, .accordion:hover{
 	background-color: white;
 }
 
+/*styling of the accordion panel*/
 .panel{
 	padding: 0 18px;
 	background-color: white;
 	display: none;
 	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
 }
 
 /*text on pictuers with table*/
