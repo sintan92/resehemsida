@@ -12,11 +12,7 @@ ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	
 	text-align: right;
-
-
-	
 }
 li{
 	display: inline-block;
@@ -31,12 +27,21 @@ li a{
 	color: #01645d;
 }
 
+
 /*vietnam title*/
 h1{
 	text-align: center;
 	color: #01645d;
 	font-family: 'Pacifico', cursive;
+	border-bottom: 1px solid red;
 }
+
+.carousel-inner img{
+	height: 500px;
+	width: 100%;
+}
+
+
 
 
 /*accordion*/
@@ -53,8 +58,8 @@ hr{
 }
 
 .wrapper{
-	width: 426px;
-	margin-left: 10px;
+	width: 320px;
+	margin-left: 5px;
 
 }
 
@@ -102,7 +107,7 @@ hr{
 		content: "";
 		position: absolute;
 		top: 50%;
-		right: 15px;
+		right: 3px;
 		transform: translateY(-50%);
 		width: 20px;
 		height: 2px;
@@ -162,23 +167,30 @@ hr{
 
 
 /*info about vietnam*/
+
+.randomFacts h3{
+	color: #39a098;
+	margin-left: 10px;
+}
+
 .articleText{
 	font-family: Verdana;
 	margin-left: 10px;
 	text-align: left;
 	font-family: 'Muli', sans-serif;
 	color: #01645d;
-
-
 }
 
 .articleText p{
 	background-color: #eee
-
 }
 
-
 /*text on pictuers with table*/
+
+.col-sm-3 img{
+	height: 300px;
+	width: 100%;
+}
 
 
 .imageMenuWrapper{
@@ -191,37 +203,36 @@ hr{
 	z-index: 999;
 	margin: 0 auto;
 	left: 0;
-	right: 0;
-	top: 40%;
+	right: 200;
+	top: 80%;
 	text-align: center;
-	width: 60;
-	color: #01645d;
+	width: 200;
+	color: white;
+	font-family: 'Work Sans', sans-serif;
 }
 
 .imageMenuText:hover{
 	color: #92beb6;
 }
 
-
-table{
-	margin-left: auto;
-	margin-right: 70px;
-	display: block;
-}
-
-img{
-	border-radius: 2px;
-	width: 300px;
-	height: 300px;
-}
-
-.scroll-table{
-	overflow-x: auto;
-}
-
 //*news*/
-a.info{
+.info a{
+	justify-content: center;
+}
+
+.info h3{
+	color: #39a098;
 	text-align: center;
+}
+
+.info h4{
+	color: #39a098;
+	text-align: center;
+}
+
+.info p{
+	font-family: 'Muli', sans-serif;
+	color: black;
 }
 
 
@@ -234,12 +245,32 @@ a.info{
 	-webkit-overflow-scrolling: touch;
 }
 
+.gallery img{
+	border-radius: 2px;
+	width: 300px;
+	height: 300px;
+}
+
+.first-gallery img{
+	border-radius: 2px;
+	width: 300px;
+	height: 300px;
+} 
+
+.last-gallery img{
+	border-radius: 2px;
+	width: 300px;
+	height: 300px;
+}
+
 .gallery{
 	display: inline-block;
+	
 }
 .first-gallery{
 	display: inline-block;
 	margin-left: 10px;
+
 }
 
 .last-gallery{
