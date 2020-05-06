@@ -36,12 +36,14 @@ h1{
 	border-bottom: 1px solid red;
 }
 
+#carouselControls .textOnCarousel {
+	position: absolute;
+}
+
 .carousel-inner img{
 	height: 500px;
 	width: 100%;
 }
-
-
 
 
 /*accordion*/
@@ -58,7 +60,7 @@ hr{
 }
 
 .wrapper{
-	width: 320px;
+	width: 315px;
 	margin-left: 5px;
 
 }
@@ -190,6 +192,13 @@ hr{
 .col-sm-3 img{
 	height: 300px;
 	width: 100%;
+	margin-bottom: 10px;
+}
+
+.col-sm-4 img{
+	height: 300px;
+	width: 100%;
+	margin-bottom: 10px
 }
 
 
@@ -211,7 +220,42 @@ hr{
 	font-family: 'Work Sans', sans-serif;
 }
 
+.imageMenuWrapper2{
+	position: relative;
+	display: inline-block;
+}
+
+.imageMenuWrapper2 .imageMenuTextBig{
+	position: absolute;
+	z-index: 999;
+	margin: 0 auto;
+	left: 50;
+	right: 800;
+	top: 80%;
+	text-align: center;
+	width: 170px;
+	color: white;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.imageMenuWrapper2 .imageMenuTextSmall{
+	position: absolute;
+	z-index: 999;
+	margin: 0 auto;
+	left: 0;
+	right: 150;
+	top: 73%;
+	text-align: center;
+	width: 200;
+	color: white;
+	font-family: 'Work Sans', sans-serif;
+}
+
 .imageMenuText:hover{
+	color: #92beb6;
+}
+
+.imageMenuTextBig:hover{
 	color: #92beb6;
 }
 
@@ -237,6 +281,13 @@ hr{
 
 
 	/*gallery with pictuers*/
+
+.galleryText h3{
+color: #39a098;
+text-align: center;
+font-family: 'Pacifico', cursive;
+}
+
 .scrolling-wrapper{
 	overflow-x: scroll;
 	overflow-y: hidden;
